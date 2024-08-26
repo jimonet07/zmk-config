@@ -18,9 +18,9 @@
 };
 
 //Assigns pin 008 as the one used for nice!view
-/*&nice_view_spi {
+&nice_view_spi {
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-}; */
+}; 
 
 / {
     keymap {
