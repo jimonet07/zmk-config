@@ -41,10 +41,10 @@ As such, those are in use within the default layer at this time.*/
                      // |  PASTE | DEL R/C|   0    |   ,    |   .    | LOWER  | ENTER  |                    |  SPACE | RAISE  |  DEL  |  LEFT  |  DOWN  |  UP    |  RIGHT |
                      bindings = <
                      &kp ESC    &kp F2                &kp F4    &kp LC(s)    &kp LC(z)     &kp EQUAL                               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp DEL
-                     &kp TAB    &kp ASTERISK          &kp N7    &kp N8       &kp N9        &kp PLUS                                &kp Y     &kp U     &kp I     &kp O      &kp P     &kp BSPC
+                     &kp TAB    &kp ASTRK             &kp N7    &kp N8       &kp N9        &kp PLUS                                &kp Y     &kp U     &kp I     &kp O      &kp P     &kp BSPC
                      &kp LC(x)  &kp SLASH             &kp N4    &kp N5       &kp N6        &kp MINUS                               &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
                      &kp LC(c)  &kp LC(LS(PLUS))      &kp N1    &kp N2       &kp N3        &kp DEL     &kp BSPC         &kp RBKT   &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RET
-                     &kp LC(v)  &kp LC(MINUS)         &kp N0    &kp COMMA    &kp PERIOD    &mo LOWER   &kp ENTER        &kp SPACE  &mo RAISE &kp DEL   &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
+                     &kp LC(v)  &kp LC(MINUS)         &kp N0    &kp COMMA    &kp PERIOD    &mo LOWER   &kp RET        &kp SPACE  &mo RAISE &kp DEL   &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
                      >;
               };
               lower_layer {
