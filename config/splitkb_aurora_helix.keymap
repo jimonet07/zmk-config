@@ -34,32 +34,32 @@ As such, those are in use within the default layer at this time.*/
 
               default_layer {
                      // ---------------------------------------------------------------------------------------------------------------------------------
-                     // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
-                     // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
-                     // |  CTRL  |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
-                     // |  SHIFT |   Z    |   X    |   C    |   V    |   B    |  LBKT  |                    |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
-                     // | ADJUST |  ESC   |  ALT   |  LGUI  | EISUU  | LOWER  | SPACE  |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
+                     // |  ESC   |   F2   |   F4   |  SAVE  |  UNDO  |   =    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
+                     // |  TAB   |   *    |   7    |   8    |   9    |   +    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
+                     // |  CUT   |   /    |   4    |   5    |   6    |   -    |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
+                     // |  COPY  | ADD R/C|   1    |   2    |   3    |   DEL  |  BSPC  |                    |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
+                     // |  PASTE | DEL R/C|   0    |   ,    |   .    | LOWER  | ENTER  |                    |  SPACE | RAISE  |  DEL  |  LEFT  |  DOWN  |  UP    |  RIGHT |
                      bindings = <
-                     &kp GRAVE  &kp N1  &kp N2   &kp N3   &kp N4    &kp N5                               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp DEL
-                     &kp TAB    &kp Q   &kp W    &kp E    &kp R     &kp T                                &kp Y     &kp U     &kp I     &kp O      &kp P     &kp BSPC
-                     &kp LCTRL  &kp A   &kp S    &kp D    &kp F     &kp G                                &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
-                     &kp LSHFT  &kp Z   &kp X    &kp C    &kp V     &kp B     &kp LBKT         &kp RBKT  &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RET
-                     &mo ADJUST &kp ESC &kp LALT &kp LGUI &kp LANG2 &mo LOWER &kp SPACE        &kp SPACE &mo RAISE &kp LANG1 &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
+                     &kp ESC    &kp F2                &kp F4    &kp LC(s)    &kp LC(z)     &kp EQUAL                               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp DEL
+                     &kp TAB    &kp ASTERISK          &kp N7    &kp N8       &kp N9        &kp PLUS                                &kp Y     &kp U     &kp I     &kp O      &kp P     &kp BSPC
+                     &kp LC(x)  &kp SLASH             &kp N4    &kp N5       &kp N6        &kp MINUS                               &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
+                     &kp LC(c)  &kp LC(LS(PLUS))      &kp N1    &kp N2       &kp N3        &kp DEL     &kp BSPC         &kp RBKT   &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RET
+                     &kp LC(v)  &kp LC(MINUS)         &kp N0    &kp COMMA    &kp PERIOD    &mo LOWER   &kp ENTER        &kp SPACE  &mo RAISE &kp DEL   &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT
                      >;
               };
               lower_layer {
                      // ---------------------------------------------------------------------------------------------------------------------------------
-                     // |      |      |      |      |      |      |                                  |      |      |      |      |      |      |
-                     // |  ~   |  !   |  @   |  #   |  $   |  %   |                                  |  ^   |  &   |  *   |  (   |  )   |      |
-                     // |      |      |      |      |      |      |                                  |      |  _   |  +   |  {   |  }   | PIPE |
-                     // |      |      |      |      |      |      |  (   |                    |  )   |      |      |      | HOME | END  |      |
-                     // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
+                     // |    `     |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |  EP TOG  |
+                     // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
+                     // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
+                     // |  BT PRV  |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
+                     // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
                      bindings = <
-                     &trans    &trans   &trans &trans   &trans   &trans                             &trans    &trans    &trans    &trans   &trans   &trans
-                     &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                          &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &trans
-                     &trans    &trans   &trans &trans   &trans   &trans                             &trans    &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-                     &trans    &trans   &trans &trans   &trans   &trans    &kp LPAR        &kp RPAR &trans    &trans    &trans    &kp HOME &kp END  &trans
-                     &trans    &trans   &trans &trans   &trans   &trans    &trans          &trans   &trans    &trans    &trans    &trans   &trans   &trans
+                     &kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT                             &kp CARET       &kp AMPS        &kp ASTRK       &kp LPAR        &kp RPAR        &ext_power EP_TOG
+                     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                          &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_SPI &rgb_ug RGB_BRI &rgb_ug RGB_TOG
+                     &bt BT_NXT &out OUT_TOG &out OUT_USB &out OUT_BLE &trans       &trans                                &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_SPD &rgb_ug RGB_BRD &trans
+                     &bt BT_PRV &trans       &trans       &trans       &trans       &trans       &kp LBRC        &kp RBRC &trans          &trans          &trans          &trans          &trans          &trans
+                     &trans     &trans       &trans       &trans       &trans       &trans       &trans          &trans   &trans          &trans          &trans          &trans          &trans          &trans
                      >;
               };
               raise_layer {
